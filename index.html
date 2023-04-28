@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gra pamięciowa</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="options-panel active">
+            <div class="time">
+                <span>czas na zapamiętanie</span>
+                <select class="time-select">
+                    <option value="1">tryb automatyczny</option>
+                    <option value="2">2s</option>
+                    <option value="3">3s</option>
+                    <option value="4">4s</option>
+                    <option value="5">5s</option>
+                    <option value="7">7s</option>
+                    <option value="10">10s</option>
+                    <option value="15">15s</option>
+                    <option value="20">20s</option>
+                    <option value="0">brak ograniczenia</option>
+                </select>
+            </div>
+
+            <div class="reset-per-round">
+                <span>losowanie nowych liczb co rundę</span>
+                <select class="reset-select">
+                    <option value="1">nie</option>
+                    <option value="2">tak</option>
+                </select>
+            </div>
+
+            <div class="numbers-per-round">
+                <span>liczba dodawanych cyfr na rundę</span>
+                <select class="numbers-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <button class="start-game">ROZPOCZNIJ GRĘ</button>
+        </div>
+
+
+        <div class="game-panel">
+            <div class="display">
+                <p></p>
+            </div>
+
+            <button class="ready-btn">ZAPAMIĘTANE</button>
+
+            <div class="display2">
+                <p></p>
+            </div>
+
+            <div class="progress">
+                <div class="line"></div>
+            </div>
+
+            <div class="keyboard">
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="number">x</button>
+                <button class="number">0</button>
+                <button class="confirm">OK</button>
+            </div>
+        </div>
+
+        <div class="round">
+            <p></p>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
